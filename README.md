@@ -5,7 +5,7 @@
 Install with:
 
 ```sh
-$ curl -fsSL https://raw.githubusercontent.com/apsislabs/shed/master/shed.sh
+$ curl -fsSL https://raw.githubusercontent.com/apsislabs/shed/master/shed.sh | sh
 ```
 
 ## Usage
