@@ -87,6 +87,16 @@ namespace :shed do
   namespace :self do
     desc "Update global shed tasks to latest version"
     task :update do
+      puts "Updating shed to latest version...\n\n"
+      sh "curl -fsSL https://raw.githubusercontent.com/apsislabs/shed/master/shed.sh | sh"
+      puts "\n\nDone"
+    end
+
+    desc "Uninstall shed globally."
+    task :uninstall do
+      puts "Uninstalling shed."
+      sh "rm -rf $HOME/.shed"
+      sh "rm $HOME/.rake/shed.rake"
     end
   end
 
