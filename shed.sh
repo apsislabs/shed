@@ -2,6 +2,11 @@
 
 echo "=> Installing global rake tasks for shed."
 
+(which shed > /dev/null 2>&1) || {
+  echo '=> Exiting: rake not installed. Run gem install rake to continue.';
+  exit 1;
+}
+
 echo "=>\tcreating directories..."
 mkdir -p $HOME/.shed
 mkdir -p $HOME/.rake
