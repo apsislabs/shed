@@ -5,7 +5,7 @@
 Install with:
 
 ```sh
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/apsislabs/shed/master/shed.sh)"
+$ curl -fsSL https://raw.githubusercontent.com/apsislabs/shed/master/shed.sh
 ```
 
 ## Usage

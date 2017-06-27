@@ -2,7 +2,7 @@
 
 echo "=> Installing global rake tasks for shed."
 
-(which shed > /dev/null 2>&1) || {
+(which rake > /dev/null 2>&1) || {
   echo '=> Exiting: rake not installed. Run gem install rake to continue.';
   exit 1;
 }
